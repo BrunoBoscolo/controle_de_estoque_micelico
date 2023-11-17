@@ -5,7 +5,6 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-<<<<<<< HEAD
 		<version>3.1.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
@@ -14,16 +13,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>estoque_cogumelos</name>
 	<description>Controle de estoque e envio de cogumelos</description>
-=======
-		<version>2.7.17</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-	<groupId>com.servidor</groupId>
-	<artifactId>servidor_java</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>servidor_java</name>
-	<description>Demo project for Spring Boot</description>
->>>>>>> fc2bbae3fa24c844f1401cd15bbd2c54d3f9f4b7
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -32,16 +21,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
-<<<<<<< HEAD
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+    	</dependency>
+		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-=======
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
->>>>>>> fc2bbae3fa24c844f1401cd15bbd2c54d3f9f4b7
 			<optional>true</optional>
 		</dependency>
 		<dependency>
@@ -49,6 +35,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.23</version>
+    </dependency>
 	</dependencies>
 
 	<build>
@@ -56,7 +47,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-<<<<<<< HEAD
 				<configuration>
 					<image>
 						<builder>paketobuildpacks/builder-jammy-base:latest</builder>
@@ -68,8 +58,6 @@
 						</exclude>
 					</excludes>
 				</configuration>
-=======
->>>>>>> fc2bbae3fa24c844f1401cd15bbd2c54d3f9f4b7
 			</plugin>
 		</plugins>
 	</build>
