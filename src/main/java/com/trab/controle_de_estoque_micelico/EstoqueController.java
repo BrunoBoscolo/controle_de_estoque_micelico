@@ -1,4 +1,4 @@
-package com.avn2.estoque_cogumelos;
+package  com.trab.controle_de_estoque_micelico; 
 
 import org.springframework.web.bind.annotation.*;
 
